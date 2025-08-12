@@ -1,0 +1,8 @@
+streamlit==1.36.0
+yfinance
+matplotlib
+pandas
+numpy
+scikit-learn
+transformers
+torch

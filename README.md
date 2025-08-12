@@ -1,19 +1,17 @@
-# AI Business MVP — Stocks, Real Estate & Consulting (Zero Cost)
+# Personal Trader Dashboard — PLUS v2
 
-Two Streamlit apps to deploy for free on **Streamlit Cloud** or **Hugging Face Spaces**.
+Adds:
+- **CSV export** of Watchlist Scanner results
+- **Sector heatmap** that shows signal intensity by sector
+- **Webhook hardening** (HTTPS-only validation, no redirects, JSON content-type, explicit timeout)
+- **Diagnostics tab** and **scheduling tips** for daily checks
 
-## Apps
-1. **app_stocks.py** — Price charts, moving averages, basic momentum signals, and manual news sentiment (FinBERT).
-2. **app_realestate.py** — RandomForest estimator on synthetic or uploaded data.
+## Deploy
+1) Create GitHub repo and upload `app_trader_plus_v2.py` + `requirements.txt`  
+2) Streamlit Cloud → New app → `app_trader_plus_v2.py` → Deploy
 
-## Quick Start
-- Upload these files to a GitHub repo.
-- On Streamlit Cloud, create a new app from the repo, pick the desired `.py` file, and deploy.
-
-## Local Run
+## Local
 ```bash
 pip install -r requirements.txt
-streamlit run app_stocks.py
-# new terminal
-streamlit run app_realestate.py
+streamlit run app_trader_plus_v2.py
 ```

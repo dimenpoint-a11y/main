@@ -4,5 +4,4 @@ matplotlib
 pandas
 numpy
 scikit-learn
-transformers
-torch
+requests

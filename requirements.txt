@@ -8,3 +8,4 @@ python-dateutil==2.9.0.post0
 pytz==2025.2
 urllib3==2.5.0
 streamlit-autorefresh==0.0.2
+fpdf==1.7.2

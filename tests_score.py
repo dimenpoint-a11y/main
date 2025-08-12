@@ -1,4 +1,3 @@
-
 # tests_score.py
 import numpy as np
 
@@ -10,7 +9,6 @@ def trade_score(row):
     sma200 = row.get("SMA_200", np.nan)
     close = row.get("Close", np.nan)
     bw = row.get("BandWidth", np.nan)
-
     if not np.isnan(rsi):
         if rsi < 30: score += 10
         elif rsi > 70: score -= 10
@@ -20,8 +18,7 @@ def trade_score(row):
     if not np.isnan(sma200) and not np.isnan(close):
         if close > sma200: score += 10
         else: score -= 10
-    if not np.isnan(bw) and bw < 0.05:
-        score += 5
+    if not np.isnan(bw) and bw < 0.05: score += 5
     return float(np.clip(score, 0, 100))
 
 def run_tests():

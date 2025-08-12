@@ -1,25 +1,14 @@
-# Trader Dashboard — Pro v4 (Personal Use)
 
-Adds clear **value‑meaning captions** under all charts (what's "higher better" vs "lower better").
+# Trader Dashboard - Pro v6.3 (Personal/Educational)
+- Sidebar **Dark Mode** (beta) with CSS + Matplotlib style switch.
+- New **Policies** tab rendering real ToS, Privacy, Risk markdown files.
+- Auto-refresh (optional), charts-first UX, cookie/consent banner, no webhooks.
+- Security/QA improvements and tests.
 
-## Files
-- `app_trader_pro.py` — Streamlit app with explanatory captions under Price, RSI, MACD, ATR, Backtest, Heatmap, etc.
-- `tests_indicators.py` — local unit-style tests
-- `requirements.txt` — pinned versions for reproducible deploys
-
-## Run locally
+## Quickstart
 ```bash
 python -m venv .venv
-# Windows: .venv\Scripts\activate
-# macOS/Linux:
-source .venv/bin/activate
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-streamlit run app_trader_pro.py
+streamlit run app_trader_pro_v63.py
 ```
-
-## Tests
-```bash
-python tests_indicators.py
-```
-
-Notes: Heuristics are for **personal, educational use only**. Not investment advice.

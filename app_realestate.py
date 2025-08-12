@@ -8,10 +8,10 @@ from sklearn.metrics import mean_absolute_error
 st.set_page_config(page_title="AI Real Estate Price Estimator (Starter)", layout="wide")
 st.title("🏠 AI Real Estate Price Estimator (Starter)")
 
-st.write("""
+st.write(\"\"\"
 Upload a small CSV of properties to train a quick model, or generate a synthetic demo dataset.
 Recommended columns: **bedrooms, bathrooms, sqft, year_built, zipcode, price**.
-""")
+\"\"\")
 
 def make_synthetic(n=500, seed=42):
     rng = np.random.default_rng(seed)

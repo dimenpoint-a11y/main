@@ -1,17 +1,25 @@
-# Personal Trader Dashboard — PLUS v2
+# Trader Dashboard — Pro v4 (Personal Use)
 
-Adds:
-- **CSV export** of Watchlist Scanner results
-- **Sector heatmap** that shows signal intensity by sector
-- **Webhook hardening** (HTTPS-only validation, no redirects, JSON content-type, explicit timeout)
-- **Diagnostics tab** and **scheduling tips** for daily checks
+Adds clear **value‑meaning captions** under all charts (what's "higher better" vs "lower better").
 
-## Deploy
-1) Create GitHub repo and upload `app_trader_plus_v2.py` + `requirements.txt`  
-2) Streamlit Cloud → New app → `app_trader_plus_v2.py` → Deploy
+## Files
+- `app_trader_pro.py` — Streamlit app with explanatory captions under Price, RSI, MACD, ATR, Backtest, Heatmap, etc.
+- `tests_indicators.py` — local unit-style tests
+- `requirements.txt` — pinned versions for reproducible deploys
 
-## Local
+## Run locally
 ```bash
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# macOS/Linux:
+source .venv/bin/activate
 pip install -r requirements.txt
-streamlit run app_trader_plus_v2.py
+streamlit run app_trader_pro.py
 ```
+
+## Tests
+```bash
+python tests_indicators.py
+```
+
+Notes: Heuristics are for **personal, educational use only**. Not investment advice.

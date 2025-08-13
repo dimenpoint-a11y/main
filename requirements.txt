@@ -1,3 +1,4 @@
+
 streamlit==1.36.0
 yfinance==0.2.65
 matplotlib==3.10.5
@@ -8,3 +9,4 @@ python-dateutil==2.9.0.post0
 pytz==2025.2
 urllib3==2.5.0
 fpdf==1.7.2
+altair==5.5.0
